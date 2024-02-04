@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #4070f4; */
+    flex-direction: column;
+}
+
+.container1 {
+    position: relative;
+    max-width: 950px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0, 1);
+    background-color: #fff;
+    height: 160vh;
+}
+
+.container1 header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+}
+
+.container1 header::before {
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4
+}
+
+.container1 form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 650px;
+    /* background-color #f2f2d2; */
+    overflow: hidden;
+}
+
+/* part where next button work */
+/* .container1 form .form{
+        position:absolute;
+        background-color: #fff;
+        transition: 0.3s ease;
+    } */
+/* .container1 form .form.second{
+        opacity: 1;
+        pointer-events:none;
+        transform: translateX(100%);
+
+    } 
+    form.secActive .form.second{
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(0);
+    }
+    form.secActive .form.first{
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-100%);
+    } */
+.container1 .form.details {
+    margin-top: 30px;
+}
+
+.container1 .form .details .education {
+    margin-top: 15px;
+}
+
+.container1 .form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333
+}
+
+.container1 .form .title2 {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333
+}
+
+.input-field22 input {
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.container1 .form .feilds {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.container1 .form .input-field {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3 - 15px);
+    margin: 4px 0;
+    height: 95px;
+}
+
+.container1 .form .input-field22 {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2 - 15px);
+    margin: 4px 0;
+}
+
+.input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field2 label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field22 label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input {
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field input[type="date"] {
+    color: #707070;
+}
+.buttons input[type="submit"] {
+    background-color: #f0ad4e;
+border: none;
+}
+
+.input-field input[type="date"]:valid {
+    color: #333;
+}
+
+.container1 form button,
+.backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.container1 form button,
+.container1 form .backBtn {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+form button:hover {
+    background-color: #265df2;
+}
+
+form button i,
+form .backBtn i {
+    margin: 0 6px;
+}
+
+form .backBtn i {
+    transform: rotate(180deg)
+}
+
+form .buttons {
+    display: flex;
+    align-items: center;
+}
+
+form .buttons button,
+.backBtn {
+    margin-right: 14px;
+}
+
+/* .nextBtn{
+        display:flex;
+        align-items:center;
+        cursor: pointer;
+     } */
+
+
+@media (max-width: 750px) {
+    .container1 form {
+        overflow-y: scroll;
+    }
+
+    .container1 form::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container1 .form .input-field {
+
+        width: calc(100% / 2 - 15px);
+
+    }
+}
+
+@media (max-width: 550px) {
+    .container1 .form .input-field {
+        width: 100%;
+    }
+}
+
+.removeskill {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.removeskill:hover {
+    opacity: 0.7;
+}
+
+.popcard {
+    background-color: snow;
+}
+
+.icon {
+    position: absolute;
+    margin-left: 249px;
+    margin: 39px;
+    visibility: hidden;
+}
+
+.feilds .input-field.error input {
+    border-color: #C6011F;
+    border-width: 2px;
+}
+
+.feilds .input-field.error .icon {
+    color: #C6011F;
+    visibility: visible;
+
+}
+
+.feilds .input-field.success input {
+    border-color: green;
+    border-width: 2px;
+}
+
+.feilds .input-field.success .icon {
+    color: green;
+    visibility: visible;
+
+
+}
+  .feilds .input-field .errormsg{
+    font-size: 12px;
+   font-weight: 500;
+   color: #C6011F;
+ 
+  }
+
+.feilds .input-field .error span {
+   font-size: 12px;
+   font-weight: 500;
+   color: #C6011F;
+   visibility: visible;
+}
+.input-field .success span {
+    visibility: none;
+ } 
+
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+    
+}

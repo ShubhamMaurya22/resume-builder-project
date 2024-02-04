@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin :0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    height: 90px;
+
+}
+
+.nav-list{
+    width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+
+}
+.logo{
+  width: 15%;
+   
+    
+}
+.logo img{
+    width: 60px;
+    margin-top: 5px; 
+
+}
+.nav-list li{
+    list-style: none;
+    padding: 10px 30px;
+    
+}  
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Serif;
+    
+}
+.nav-list li a:hover {
+    color: rgb(0, 0, 0);
+    
+}
+.rightnav{
+    width: 50%;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+}
+.btnlogin{
+    padding: 5px 17px;
+    margin: 7px 0;
+    border: 1px white;
+    border-radius: 9px;
+    font-size: 16px;
+    background: none;
+    color:white;
+    font-family: Serif;
+}
+.btnlogin:hover{
+    color: rgb(0, 0, 0);
+}
+.btnsignup{
+    padding: 12px 16px;
+    margin: 10px 15px;
+    border: 1px  white;
+    border-radius: 9px;
+    font-size: 16px;
+    background-color: rgba(6, 91, 127, 0.959);
+    color: white;
+    font-family: Serif;
+    
+}
+.btnsignup:hover{
+    /* background-color: blue; */
+    color: black;
+}
+.background{
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    /* background-color: rgb(3, 114, 99); */
+    background-color: #1f262E;
+    /* background-size: cover;
+    background-blend-mode: darken; */
+}
+
+</style>
+<body>
+    <nav class="navbar background">
+       
+        <ul class="nav-list">
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+           <li><a href="#home" >Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact" >ContactUs</a></li>
+           <li><a href= "tempates.php">Templates</a></li>
+        </ul>
+        <div class="rightnav">
+          <button class="btnlogin btn-sm" data-bs-toggle="modal" data-bs-target="#signupModal">LOGIN</button>
+          <a href="dashboard.php"><button class="btnsignup btn-sm">SIGN UP</button></a>
+        </div>
+     </nav> 
+</body>
+</html>
